@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добро пожаловать!"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выполните вход или зарегистрируйтесь."
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/tv_welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/et_email"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите вашу почту"
+        android:layout_below="@id/tv_subtitle"
+        android:layout_marginTop="32dp"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите пароль"
+        android:layout_below="@id/et_email"
+        android:layout_marginTop="16dp"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
+        android:inputType="textPassword"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+        android:layout_marginTop="24dp"
+        android:text="Войти"
+        android:background="@color/gray"
+        android:textColor="#FFFFFF"
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/tv_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Забыли пароль?"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>
